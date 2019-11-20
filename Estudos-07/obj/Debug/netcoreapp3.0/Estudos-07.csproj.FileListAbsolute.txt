@@ -1,0 +1,10 @@
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-07\bin\Debug\netcoreapp3.0\Estudos-07.exe
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-07\bin\Debug\netcoreapp3.0\Estudos-07.deps.json
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-07\bin\Debug\netcoreapp3.0\Estudos-07.runtimeconfig.json
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-07\bin\Debug\netcoreapp3.0\Estudos-07.runtimeconfig.dev.json
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-07\bin\Debug\netcoreapp3.0\Estudos-07.dll
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-07\bin\Debug\netcoreapp3.0\Estudos-07.pdb
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-07\obj\Debug\netcoreapp3.0\Estudos-07.AssemblyInfoInputs.cache
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-07\obj\Debug\netcoreapp3.0\Estudos-07.AssemblyInfo.cs
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-07\obj\Debug\netcoreapp3.0\Estudos-07.dll
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-07\obj\Debug\netcoreapp3.0\Estudos-07.pdb

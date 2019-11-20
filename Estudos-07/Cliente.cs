@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Estudos_06
+namespace Estudos_07
 {
     public class Cliente
     {
@@ -12,9 +12,7 @@ namespace Estudos_06
         public string Cpf { 
             
             get { return _cpf; } 
-            set { //Escrevo minha validação de CPF
-                _cpf = value;
-            }
+            set {}
         }
         public string Profissao { get; set; }
     }
