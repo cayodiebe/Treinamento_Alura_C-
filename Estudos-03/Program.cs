@@ -13,7 +13,7 @@ namespace Estudos_03
 
             ContaCorrente contaDaGabrielaCosta = new ContaCorrente();
             contaDaGabrielaCosta.titular = "Gabriela";
-            contaDaGabrielaCosta.agencia = 863212;
+            contaDaGabrielaCosta.agencia = 123456;
             contaDaGabrielaCosta.numero = 863;
 
             Console.WriteLine("Igualdade Tipo de Referencia: " + (contaDaGabriela == contaDaGabrielaCosta));
@@ -24,12 +24,30 @@ namespace Estudos_03
             Console.WriteLine("Igualdade Tipo de Valor: " + (idade == idadeMaisUmaVez));
 
 
-            contaDaGabriela = contaDaGabrielaCosta;
             Console.WriteLine("Igualdade Tipo de Teste: " + (contaDaGabriela == contaDaGabrielaCosta));
 
             contaDaGabriela.saldo = 300;
-            Console.WriteLine(contaDaGabriela.300);
-            Console.WriteLine(contaDaGabrielaCosta.300);
+            Console.WriteLine(contaDaGabriela.saldo);
+
+            Console.WriteLine(contaDaGabriela.saldo);
+            bool ResultDosaque = contaDaGabriela.Sacar(500);
+            Console.WriteLine(contaDaGabriela.saldo);
+            Console.WriteLine(ResultDosaque);
+
+            contaDaGabriela.Depositar(500);
+            Console.WriteLine(contaDaGabriela.saldo);
+
+            Console.WriteLine("Saldo Da Gabriela" + contaDaGabriela.saldo);
+            Console.WriteLine("Saldo Da Gabriela Costa" + contaDaGabrielaCosta.saldo);
+
+            bool resultTransfer = contaDaGabriela.Transferir(200, contaDaGabrielaCosta);
+            Console.WriteLine("Saldo Da Gabriela" + contaDaGabriela.saldo);
+            Console.WriteLine("Saldo Da Gabriela Costa" + contaDaGabrielaCosta.saldo);
+            Console.WriteLine(resultTransfer);
+
+            
+
+
 
             Console.ReadLine();
 
