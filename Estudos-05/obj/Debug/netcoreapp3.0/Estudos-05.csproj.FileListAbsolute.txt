@@ -1,0 +1,11 @@
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\bin\Debug\netcoreapp3.0\Estudos-05.exe
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\bin\Debug\netcoreapp3.0\Estudos-05.deps.json
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\bin\Debug\netcoreapp3.0\Estudos-05.runtimeconfig.json
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\bin\Debug\netcoreapp3.0\Estudos-05.runtimeconfig.dev.json
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\bin\Debug\netcoreapp3.0\Estudos-05.dll
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\bin\Debug\netcoreapp3.0\Estudos-05.pdb
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\obj\Debug\netcoreapp3.0\Estudos-05.csprojAssemblyReference.cache
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\obj\Debug\netcoreapp3.0\Estudos-05.AssemblyInfoInputs.cache
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\obj\Debug\netcoreapp3.0\Estudos-05.AssemblyInfo.cs
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\obj\Debug\netcoreapp3.0\Estudos-05.dll
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-05\obj\Debug\netcoreapp3.0\Estudos-05.pdb
