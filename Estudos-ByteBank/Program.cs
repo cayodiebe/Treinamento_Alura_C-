@@ -26,6 +26,9 @@ namespace Estudos_ByteBank
             Console.WriteLine(roberta.Nome);
             Console.WriteLine(roberta.GetBonificacao());
 
+            Funcionario robertaTeste = roberta;
+            Console.WriteLine("Diretor: " + roberta.GetBonificacao());
+            Console.WriteLine("Funcionario: " + robertaTeste.GetBonificacao());
 
             Console.WriteLine("Total: " + gerenciador.GetTotalBonificacao());
         }
