@@ -4,6 +4,7 @@ C:\Users\CayoDiebe\source\repos\Estudos\Estudos-ByteBank\bin\Debug\netcoreapp3.0
 C:\Users\CayoDiebe\source\repos\Estudos\Estudos-ByteBank\bin\Debug\netcoreapp3.0\Estudos-ByteBank.runtimeconfig.dev.json
 C:\Users\CayoDiebe\source\repos\Estudos\Estudos-ByteBank\bin\Debug\netcoreapp3.0\Estudos-ByteBank.dll
 C:\Users\CayoDiebe\source\repos\Estudos\Estudos-ByteBank\bin\Debug\netcoreapp3.0\Estudos-ByteBank.pdb
+C:\Users\CayoDiebe\source\repos\Estudos\Estudos-ByteBank\obj\Debug\netcoreapp3.0\Estudos-ByteBank.csprojAssemblyReference.cache
 C:\Users\CayoDiebe\source\repos\Estudos\Estudos-ByteBank\obj\Debug\netcoreapp3.0\Estudos-ByteBank.AssemblyInfoInputs.cache
 C:\Users\CayoDiebe\source\repos\Estudos\Estudos-ByteBank\obj\Debug\netcoreapp3.0\Estudos-ByteBank.AssemblyInfo.cs
 C:\Users\CayoDiebe\source\repos\Estudos\Estudos-ByteBank\obj\Debug\netcoreapp3.0\Estudos-ByteBank.dll
