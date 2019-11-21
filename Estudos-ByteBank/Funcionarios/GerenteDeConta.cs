@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Estudos_ByteBank.Sistemas;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Estudos_ByteBank.Funcionarios
 {
-    public class GerenteDeConta : Funcionario
+    public class GerenteDeConta : Autenticavel
     {
 
         public GerenteDeConta(double Salario, string cpf) : base(Salario, cpf)
