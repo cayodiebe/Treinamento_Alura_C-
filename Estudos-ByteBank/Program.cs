@@ -28,6 +28,10 @@ namespace Estudos_ByteBank
             Funcionario pedro = new Designer(3000, "123456789");
             pedro.Nome = "Pedro";
 
+            ParceiroComercial pj = new ParceiroComercial();
+            pj.Senha = "123456";
+
+            sistemaInterno.Logar(pj, "123456");
             sistemaInterno.Logar(camila, "ABC");
             sistemaInterno.Logar(roberta, "123");
             sistemaInterno.Logar(roberta, "321");

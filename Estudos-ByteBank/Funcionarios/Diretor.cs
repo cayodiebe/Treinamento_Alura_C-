@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Estudos_ByteBank.Funcionarios
 {
-    public class Diretor : Autenticavel
+    public class Diretor : FuncionarioAutenticavel
     {
         
         public Diretor(double Salario, string cpf) : base(Salario, cpf)
@@ -13,6 +13,10 @@ namespace Estudos_ByteBank.Funcionarios
 
         }
 
+        public bool Autenticar(string senha)
+        {
+            return true;
+        }
       
         public override void AumentarSalario()
         {
