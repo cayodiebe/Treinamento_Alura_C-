@@ -4,15 +4,25 @@ using System.Text;
 
 namespace Estudos_ByteBank.Funcionarios
 {
-    public class Funcionario
+    public abstract class Funcionario
     {
-        public string Nome { get; set; }
-        public string CPF { get; set; }
-        public double Salario { get; set; }
 
-        public virtual double GetBonificacao()
+        public static int TotalDeFuncionario { get; private set; }
+        public string Nome { get; set; }
+        public string CPF { get; private set; }
+        public double Salario { get; protected set; }
+
+
+        public Funcionario(double Salario, string CPF)
         {
-            return this.Salario * 0.10;
+            this.Salario = Salario;
+            this.CPF = CPF;
+            TotalDeFuncionario++;
         }
+
+        public abstract void AumentarSalario();
+
+        public abstract double GetBonificacao();
+        
     }
 }

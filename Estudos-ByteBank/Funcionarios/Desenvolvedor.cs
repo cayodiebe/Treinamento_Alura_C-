@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Estudos_ByteBank.Funcionarios
 {
-    public class Diretor : Funcionario
+    public class Desenvolvedor : Funcionario
     {
 
-        public Diretor(double Salario, string cpf) : base(Salario, cpf)
+        public Desenvolvedor(double Salario, string cpf) : base(Salario, cpf)
         {
 
         }
@@ -17,7 +17,7 @@ namespace Estudos_ByteBank.Funcionarios
         }
         public override double GetBonificacao()
         {
-            return Salario * 0.5;
+            return Salario * 0.1;
         }
     }
 }
