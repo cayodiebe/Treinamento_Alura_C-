@@ -2,6 +2,7 @@
 {
     public class ContaCorrente
     {
+        public static double TaxaDeOperacao { get; private set; }
         private double _saldo = 100;
         private int _agencia;
         //Compartilham essa informaçao;
@@ -33,6 +34,7 @@
         public ContaCorrente(int agencia, int numero) { 
             Agencia = agencia; 
             Numero = numero;
+            TaxaDeOperacao = 30 / totalDeContasCriadas;
             totalDeContasCriadas++;
         }
 
