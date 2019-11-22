@@ -23,7 +23,12 @@ namespace Estudos_07
             {
                 Metodo();
             }
-            catch (NullReferenceException ex)
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine("Divisão por 0");
+
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Aconteceu um erro");
@@ -37,21 +42,21 @@ namespace Estudos_07
 
         private static void TestaDivisao(int divisor)
         {
-            try
-            {
-                int resultado = Dividir(10, divisor);
-                Console.WriteLine("Resultado da Divisão por " + divisor + " é " + resultado);
-            } catch (DivideByZeroException erro)
-            {
-                Console.WriteLine("Não é possível fazer uma divisão por 0");
-                Console.WriteLine(erro.Message);
-
-            }
+            int resultado = Dividir(10, divisor);
+            Console.WriteLine("Resultado da Divisão por " + divisor + " é " + resultado);
         }
 
         private static int Dividir(int numero, int divisor)
         {
-           return numero / divisor;
+            try
+            {
+                return numero / divisor;
+            }
+            catch (DivideByZeroException)
+            {
+                Console.Write("Exceção com 0");
+                throw;
+            }
         }
 
 
