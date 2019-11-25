@@ -21,7 +21,13 @@ namespace Estudos_07
 
             try
             {
-                Metodo();
+                //Metodo();
+                ContaCorrente cd = new ContaCorrente(4, 0);
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine("Ocorreu uma excessão do tipo Argumente Exception");
+
             }
             catch (DivideByZeroException ex)
             {

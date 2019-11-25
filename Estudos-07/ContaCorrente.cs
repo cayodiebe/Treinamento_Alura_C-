@@ -1,4 +1,6 @@
-﻿namespace Estudos_07
+﻿using System;
+
+namespace Estudos_07
 {
     public class ContaCorrente
     {
@@ -8,22 +10,15 @@
         //Compartilham essa informaçao;
         public static int totalDeContasCriadas { get; private set; }
 
-
         public Cliente Titular{get;set;}
-        public int Agencia { 
-            get { return _agencia; } 
-            set {
-                if (value <= 0)
-                    return;
-                _agencia = value;
-            } 
-        }
-        public int Numero { get; set; }
+        public int Agencia { get; }
+
+        public int Numero { get; }
 
         public double Saldo
         {
             get { return _saldo; }
-            set {
+            private set {
                 if (value < 0)
                     return;
 
@@ -31,8 +26,18 @@
             }
         }
 
-        public ContaCorrente(int agencia, int numero) { 
-            Agencia = agencia; 
+        public ContaCorrente(int agencia, int numero) {
+            if (agencia <= 0)
+            {
+                ArgumentException argumentException = new ArgumentException("Agencia deve ser maior que 0", nameof(agencia));
+                throw argumentException;
+            }
+            if (numero <= 0)
+            {
+                ArgumentException argumentException = new ArgumentException("numero deve ser maior que 0", nameof(numero));
+                throw argumentException;
+            }
+            Agencia = agencia;
             Numero = numero;
             TaxaDeOperacao = 30 / totalDeContasCriadas;
             totalDeContasCriadas++;
