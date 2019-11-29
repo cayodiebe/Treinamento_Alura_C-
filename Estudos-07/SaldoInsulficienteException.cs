@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Estudos_07
 {
-    public class SaldoInsulficienteException :  Exception
+    public class SaldoInsulficienteException :  OperacaoFinanceiraException
     {
         public double Saldo { get; }
         public double ValorSaque { get; }
@@ -16,6 +16,11 @@ namespace Estudos_07
         {
             Saldo = saldo;
             ValorSaque = valorSaque;
+        }
+
+        public SaldoInsulficienteException(string mensagem, Exception saldoExcesao) : base (mensagem, exceptionIinterna)
+        {
+
         }
     }
 }

@@ -11,6 +11,11 @@ namespace Estudos_07
         public static int totalDeContasCriadas { get; private set; }
 
         public Cliente Titular{get;set;}
+
+        public int ContadorSaquesNaoPermitido { get; private set; }
+        public int ContadorTransferenciasNaoPermitido { get; private set; }
+
+
         public int Agencia { get; }
 
         public int Numero { get; }
@@ -49,9 +54,10 @@ namespace Estudos_07
             if (valor < 0)
                 throw new ArgumentException("Valor Invalido para o Saque", nameof(valor) );
 
-            if (this._saldo < valor)
+            if (this._saldo < valor) {
+                ContadorSaquesNaoPermitido++;
                 throw new SaldoInsulficienteException(Saldo, valor);
-
+            }
             this._saldo -= valor;
         }
         public void Depositar(double valor)
@@ -64,7 +70,17 @@ namespace Estudos_07
             if (valor < 0)
                 throw new ArgumentException("Valor Invalido para a transferencia", nameof(valor));
 
-            Sacar(valor);
+
+            try
+            {
+                Sacar(valor);
+
+            }
+            catch (SaldoInsulficienteException ex)
+            {
+                ContadorTransferenciasNaoPermitido++;
+                throw new OperacaoFinanceiraException("Operacao nao Realizada", ex);
+            }
             contaDestino.Depositar(valor);
         }
     }
