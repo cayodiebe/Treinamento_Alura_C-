@@ -22,10 +22,15 @@ namespace Estudos_07
             try
             {
                 //Metodo();
-                ContaCorrente cd = new ContaCorrente(4, 0);
+                ContaCorrente cd = new ContaCorrente(4, 123132);
+
+                cd.Depositar(400);
+                Console.WriteLine(cd.Saldo);
+                cd.Sacar(5100);
             }
             catch (ArgumentException ex)
-            {
+            {   
+                Console.WriteLine("Argumento com problema "+ ex.ParamName);
                 Console.WriteLine("Ocorreu uma excessão do tipo Argumente Exception");
 
             }
@@ -33,6 +38,10 @@ namespace Estudos_07
             {
                 Console.WriteLine("Divisão por 0");
 
+            }
+            catch (SaldoInsulficienteException ex)
+            {
+                Console.WriteLine("Saldo Insulficiente");
             }
             catch (Exception ex)
             {

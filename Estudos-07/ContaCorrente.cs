@@ -39,32 +39,33 @@ namespace Estudos_07
             }
             Agencia = agencia;
             Numero = numero;
-            TaxaDeOperacao = 30 / totalDeContasCriadas;
             totalDeContasCriadas++;
+            TaxaDeOperacao = 30 / totalDeContasCriadas;
         }
 
 
-        public bool Sacar(double valor)
+        public void Sacar(double valor)
         {
+            if (valor < 0)
+                throw new ArgumentException("Valor Invalido para o Saque", nameof(valor) );
+
             if (this._saldo < valor)
-                return false;
+                throw new SaldoInsulficienteException(Saldo, valor);
 
             this._saldo -= valor;
-            return true;
         }
         public void Depositar(double valor)
         {
             this._saldo += valor;
         }
 
-        public bool Transferir(double valor, ContaCorrente contaDestino)
+        public void Transferir(double valor, ContaCorrente contaDestino)
         {
-            if (this._saldo < valor)
-                return false;
+            if (valor < 0)
+                throw new ArgumentException("Valor Invalido para a transferencia", nameof(valor));
 
-            this._saldo -= valor;
+            Sacar(valor);
             contaDestino.Depositar(valor);
-            return true;
         }
     }
 
