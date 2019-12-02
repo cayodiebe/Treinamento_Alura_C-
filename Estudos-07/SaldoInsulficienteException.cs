@@ -18,7 +18,7 @@ namespace Estudos_07
             ValorSaque = valorSaque;
         }
 
-        public SaldoInsulficienteException(string mensagem, Exception saldoExcesao) : base (mensagem, exceptionIinterna)
+        public SaldoInsulficienteException(string mensagem, Exception saldoExcesao) : base (mensagem, saldoExcesao)
         {
 
         }

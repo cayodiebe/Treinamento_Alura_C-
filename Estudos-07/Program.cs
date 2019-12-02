@@ -6,7 +6,21 @@ namespace Estudos_07
     {
         static void Main(string[] args)
         {
-           
+            CarregarContas();
+
+
+        }
+        public static void CarregarContas()
+        {
+            LeitorDeArquivo leitorDeArquivo = new LeitorDeArquivo("contas.txt");
+            leitorDeArquivo.LerProximaLinha();
+            leitorDeArquivo.LerProximaLinha();
+            leitorDeArquivo.LerProximaLinha();
+            leitorDeArquivo.Fechar();
+        }
+
+        public static void TestaIneer()
+        {
             try
             {
                 ContaCorrente cd = new ContaCorrente(4, 123132);
