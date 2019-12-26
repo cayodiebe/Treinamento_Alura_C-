@@ -22,7 +22,7 @@ namespace ByteBank.SistemaAgencia
 
         public string GetValor(string NomeParametro)
         {
-            int indiceParametro = _argumetos.IndexOf();
+            int indiceParametro = _argumetos.IndexOf('2');
             return NomeParametro;
         }
 
