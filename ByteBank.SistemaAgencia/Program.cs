@@ -11,11 +11,20 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            ContaCorrente conta = new ContaCorrente(847, 489754);
+            string url = "pagina?moedaOrigem=real&moedaDestino=dolar";
 
-            Console.WriteLine(conta.Numero);
+            Console.WriteLine(url);
+
+            ExtratorDeValorArgumentosURL extratorURL = new ExtratorDeValorArgumentosURL();
+            int indiceInterrogacao = url.IndexOf('?');
+            string argumentos = url.Substring(indiceInterrogacao+1);
+            Console.WriteLine(argumentos);
+
+            argumentos.
+
 
             Console.ReadLine();
+
         }
     }
 }
